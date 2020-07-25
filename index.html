@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    body{
+        background-image: url(image/image.jpg);
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+        margin-top:  50px;
+
+    }
+    .editBtn{
+     color : black;
+     background-color: yellow;
+     height: 30px;
+     width: 100px;
+     border-radius: 50px;
+     margin: 10px 10px 10px 10px;
+    }
+    .delBtn{
+        color : black;
+     background-color: red;
+     height: 30px;
+     width: 100px;
+     border-radius: 50px;
+     margin: 10px 5px 5px 10px;
+      
+    }
+  .liText{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+  }
+</style>
+
+
+
+<body>
+    <div>
+        <input style="height: 30px; border-radius: 10px;" placeholder="Enter the text" type="text" name="" id="addItem">
+   <button  style="background-color: royalblue; border-radius: 10px; height: 30px;" onclick="addItem()">Add Item </button>
+   <button style="background-color: red; border-radius: 10px; height: 30px;" onclick="deleteAll()">Delete All </button>
+    </div>
+<div>
+    <ol id="list">
+
+    </ol>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
